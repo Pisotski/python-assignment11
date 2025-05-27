@@ -1,9 +1,8 @@
 import plotly.express as px
 import plotly.data as pldata
 
-
-df = pldata.iris(
-    return_type="pandas"
+df = (
+    pldata.iris()
 )  # Returns a DataFrame.  plotly.data has a number of sample datasets included.
 fig = px.scatter(
     df,
